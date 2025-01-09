@@ -21,7 +21,7 @@ module.exports = {
     },
     extend: {
       fontFamily: {
-        body: ['Oswald', 'sans-serif'], // Убедитесь, что есть запасной шрифт
+        body: ['DMsans', 'sans-serif'], // Убедитесь, что есть запасной шрифт
       },
       colors: {
         border: 'hsl(var(--border))',
