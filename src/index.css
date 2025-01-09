@@ -61,11 +61,18 @@
 }
 
 @layer base {
+  @font-face {
+    font-family: 'Oswald';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url('/fonts/DMsans/DMsans-Regular.ttf') format('truetype');
+  }
   * {
     @apply border-border;
   }
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground font-body;
   }
 }
 

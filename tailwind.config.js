@@ -15,8 +15,14 @@ module.exports = {
       screens: {
         '2xl': '1400px',
       },
+      fontFamily: {
+        body: 'Oswald',
+      },
     },
     extend: {
+      fontFamily: {
+        body: ['Oswald', 'sans-serif'], // Убедитесь, что есть запасной шрифт
+      },
       colors: {
         border: 'hsl(var(--border))',
         input: 'hsl(var(--input))',
