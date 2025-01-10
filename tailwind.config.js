@@ -24,6 +24,8 @@ module.exports = {
         body: ['DMsans', 'sans-serif'], // Убедитесь, что есть запасной шрифт
       },
       colors: {
+        red: 'hsl(var(--red))',
+        lightRed: 'hsl(var(--light-red))',
         border: 'hsl(var(--border))',
         input: 'hsl(var(--input))',
         ring: 'hsl(var(--ring))',
