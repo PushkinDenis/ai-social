@@ -1,5 +1,5 @@
 import { cva, type VariantProps } from 'class-variance-authority';
-import { FC, Ref } from 'react';
+import { FC, Ref, ButtonHTMLAttributes } from 'react';
 import { cn } from '@/lib/utils';
 import { Slot } from '@radix-ui/react-slot';
 
@@ -30,14 +30,14 @@ const buttonVariants = cva(
   },
 );
 
-export interface ButtonProps
-  extends React.ButtonHTMLAttributes<HTMLButtonElement>,
+export interface IButtonProps
+  extends ButtonHTMLAttributes<HTMLButtonElement>,
     VariantProps<typeof buttonVariants> {
   asChild?: boolean;
   ref?: Ref<HTMLButtonElement>;
 }
 
-export const Button: FC<ButtonProps> = ({
+export const Button: FC<IButtonProps> = ({
   className,
   variant,
   ref,
