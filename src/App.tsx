@@ -1,5 +1,13 @@
 import { FC, useRef } from 'react';
 import { Button } from '@/components/ui/button';
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardFooter,
+  CardHeader,
+  CardTitle,
+} from '@/components/ui/card';
 import { Input } from '@/components/ui/input';
 
 export const App: FC = () => {
@@ -10,15 +18,25 @@ export const App: FC = () => {
   };
 
   return (
-    <div className="flex bg-lightRed text-red w-full h-screen items-center justify-center">
-      <Input ref={inputRef}></Input>
-      <Button
-        variant={'destructive'}
-        onClick={handleRef}
-        className="focus:outline-none focus:bg-slate-600 focus:ring focus:ring-violet-300"
-      >
-        Кнопк
-      </Button>
+    <div className="flex flex-col bg-lightRed text-red w-full h-screen items-center justify-center">
+      <Card className="flex flex-col items-center justify-center">
+        <CardHeader>
+          <CardTitle>Card Title</CardTitle>
+          <CardDescription>Card Description</CardDescription>
+        </CardHeader>
+        <CardContent>
+          <Input ref={inputRef} className="outline-violet-800"></Input>
+        </CardContent>
+        <CardFooter>
+          <Button
+            variant={'destructive'}
+            onClick={handleRef}
+            className="focus:outline-none focus:bg-slate-600 focus:ring focus:ring-violet-300"
+          >
+            Кнопк
+          </Button>
+        </CardFooter>
+      </Card>
     </div>
   );
 };
