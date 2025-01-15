@@ -1,9 +1,10 @@
 import { FC } from 'react';
 import { Card } from '@atoms';
+import { CardStar } from '../cards';
 
 export const Layout: FC = () => (
   <div className="grid-layout w-full h-full">
-    <div className="grid-area-a">{<Card colorSchema="purple" />}</div>
+    <div className="grid-area-a">{<CardStar />}</div>
     <div className="grid-area-b">{<Card colorSchema="white" />}</div>
     <div className="grid-area-c ">{<Card colorSchema="yellow" />}</div>
     <div className="grid-area-d">{<Card colorSchema="violet" />}</div>
