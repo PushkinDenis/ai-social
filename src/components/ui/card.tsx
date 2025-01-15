@@ -10,7 +10,7 @@ const cardVariants = cva(
   'flex flex-col items-center justify-center rounded-[0.5rem] border bg-card text-card-foreground shadow',
   {
     variants: {
-      variant: {
+      colorSchema: {
         purple: 'bg-purple',
         violet: 'bg-violet',
         yellow: 'bg-yellow',
@@ -19,8 +19,8 @@ const cardVariants = cva(
   },
 );
 
-export const Card: FC<ICardProps> = ({ className, ref, variant, ...props }) => (
-  <div ref={ref} className={cn(cardVariants({ variant, className }))} {...props} />
+export const Card: FC<ICardProps> = ({ className, ref, colorSchema, ...props }) => (
+  <div ref={ref} className={cn(cardVariants({ colorSchema, className }))} {...props} />
 );
 
 export const CardHeader: FC<ICardProps> = ({ className, ref, ...props }) => (

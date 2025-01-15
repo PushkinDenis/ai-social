@@ -24,7 +24,7 @@ export const App: FC = () => {
 
   return (
     <div className="flex flex-col bg-background text-red w-full h-screen items-center justify-center">
-      <Card className="" variant={'purple'}>
+      <Card className="" colorSchema={'purple'}>
         <CardHeader>
           <CardTitle>Card Title</CardTitle>
           <CardDescription>Card Description</CardDescription>
@@ -49,7 +49,7 @@ export const App: FC = () => {
           </Button>
         </CardFooter>
       </Card>
-      <Card className="" variant={'yellow'}>
+      <Card className="" colorSchema={'yellow'}>
         <CardHeader>
           <CardTitle>Card Title</CardTitle>
           <CardDescription>Card Description</CardDescription>
@@ -74,7 +74,7 @@ export const App: FC = () => {
           </Button>
         </CardFooter>
       </Card>
-      <Card className="" variant={'violet'}>
+      <Card className="" colorSchema={'violet'}>
         <CardHeader>
           <CardTitle>Card Title</CardTitle>
           <CardDescription>Card Description</CardDescription>
