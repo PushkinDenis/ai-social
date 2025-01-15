@@ -1,6 +1,4 @@
 import { FC } from 'react';
-import { Layout } from './components/ui/layout';
+import { Layout } from '@organisms';
 
-export const App: FC = () => {
-  return <Layout />;
-};
+export const App: FC = () => <Layout />;
