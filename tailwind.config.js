@@ -27,6 +27,8 @@ module.exports = {
         red: 'hsl(var(--red))',
         purple: 'hsl(var(--purple))',
         yellow: 'hsl(var(--yellow))',
+        lightYellow: 'hsl(var(--lightYellow))',
+        white: 'hsl(var(--white))',
         violet: 'hsl(var(--violet))',
         lightRed: 'hsl(var(--light-red))',
         border: 'hsl(var(--border))',

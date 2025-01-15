@@ -7,13 +7,15 @@ interface ICardProps extends HTMLAttributes<HTMLDivElement>, VariantProps<typeof
 }
 
 const cardVariants = cva(
-  'flex flex-col items-center justify-center rounded-[0.5rem] border bg-card text-card-foreground shadow',
+  'flex flex-col w-full h-full items-center justify-center rounded-[0.5rem] border bg-card text-card-foreground shadow',
   {
     variants: {
       colorSchema: {
         purple: 'bg-purple',
         violet: 'bg-violet',
         yellow: 'bg-yellow',
+        lightYellow: 'bg-lightYellow',
+        white: 'bg-white',
       },
     },
   },
