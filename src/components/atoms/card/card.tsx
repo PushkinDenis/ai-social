@@ -26,19 +26,11 @@ export const Card: FC<ICardProps> = ({ className, ref, colorSchema, ...props }) 
 );
 
 export const CardHeader: FC<ICardProps> = ({ className, ref, ...props }) => (
-  <div
-    ref={ref}
-    className={cn('flex flex-col items-center space-y-1.5 p-6', className)}
-    {...props}
-  />
+  <div ref={ref} className={cn('flex flex-col items-center lg: text-5xl', className)} {...props} />
 );
 
 export const CardTitle: FC<ICardProps> = ({ className, ref, ...props }) => (
-  <div
-    ref={ref}
-    className={cn('font-semibold leading-none tracking-tight', className)}
-    {...props}
-  />
+  <h1 ref={ref} className={cn('font-semibold leading-none tracking-tight', className)} {...props} />
 );
 
 export const CardDescription: FC<ICardProps> = ({ className, ref, ...props }) => (

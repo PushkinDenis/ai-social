@@ -75,8 +75,7 @@
     font-family: 'DMsans';
     font-style: normal;
     font-weight: 400;
-    font-display: swap;
-    src: url('/fonts/DMsans/DMsans-Regular.ttf') format('truetype');
+    src: url('./fonts/DMsans/DMSans-Regular.ttf') format('truetype');
   }
 
   * {
@@ -117,7 +116,6 @@
   .grid-area-h {
     grid-area: h;
   }
-
   .grid-layout {
     display: grid;
     height: 100vh;
@@ -134,7 +132,7 @@
       'h h h h';
   }
 
-  @screen lg {
+  @screen xl {
     .grid-layout {
       grid-template-areas:
         'g g a a a a d d'
